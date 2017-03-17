@@ -1,0 +1,41 @@
+<div class="header" ng-controller="AboutCtrl as about">
+  <div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper blue-grey">
+    <a ng-href="/" class="brand-logo"><img src="images/logo-header.png"></a>
+      <a href="/" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+       <li ><a ng-href="/mapa"><i class="material-icons right">dashboard</i>Mapa</a></li>
+       <!-- <li ><a ng-href="/cargaDeHoras"><i class="material-icons right">timer</i>Cargar Horas</a></li>
+       <li ><a ng-href="/cargaDeTrabajador"><i class="material-icons right">assignment_ind</i>Cargas de Trabajador</a></li> -->
+       <li ><a data-activates="dropdown1" class="dropdown-button" ><i class="material-icons right">settings</i>Mantenedores</a></li>
+     </ul >
+   </div>
+  </nav>
+  </div>
+  <ul class="side-nav" id="mobile-demo">
+     <!-- <li><div class="userView">
+    <div class="background">
+      <img src="images/edificio.jpg">
+    </div>
+    <a href="#!user"><img class="circle"></a>
+    <a href="#!name"><span class="white-text name">John Doe</span></a>
+    <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+  </div></li> -->
+    <li><a ng-href="/"><i class="material-icons">cloud</i>Inicio</a></li>
+    <!-- <li><a ng-href="/verProyecto"><i class="material-icons">keyboard_return</i>Volver Atras</a></li> -->
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Sub Menus</a></li>
+    <li><a ng-href="/verProyecto"><i class="material-icons right">dashboard</i>Aplicacion 1</a></li>
+  </ul>
+</div>
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="/verCliente">Cliente</a></li>
+  <li><a href="/verTipoProyecto">Tipo de Proyecto</a></li>
+  <!-- <li><a href="/verTipoTarea">Tipo de Tarea</a></li>
+  <li><a href="/verCargoTrabajador">Cargo de Trabajador</a></li>
+  <li><a href="/verTipoTrabajador">Tipo de Trabajador</a></li>
+  <li class="divider"></li>
+  <li><a href="/verTrabajador">Trabajador</a></li> -->
+</ul>
